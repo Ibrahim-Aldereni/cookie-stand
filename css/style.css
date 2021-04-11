@@ -1,0 +1,59 @@
+body{
+  background-color: bisque;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: cadetblue;
+  height: 110px
+}
+#logo{
+  float: left;
+}
+
+header h1{
+  text-align: center;
+  margin: 0;
+
+}
+
+section{
+  color: whitesmoke;
+  width: 56%;
+  background-color: brown;
+  margin: auto;
+}
+
+section p{
+  padding: 15px;
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+}
+
+#btn1{
+  margin-left: 45%;
+  margin-bottom: 20px;
+  width: 120px;
+  height: 80px;
+  border: 5px solid red;
+  font-size: 18px;
+}
+
+#btn1:hover{
+  background-color: chartreuse;
+}
+
+
+footer{
+  height: 70px;
+  background-color: cadetblue;
+}
+
+footer p{
+  text-align: center;
+  padding-top: 1.6%;
+}
