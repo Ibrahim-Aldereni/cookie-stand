@@ -19,7 +19,6 @@ function Locations(name,minCust,maxCust,avgCookies){
   Instances.push(this);
 }
 
-
 /**************************** prototype methods ***********************/
 
 Locations.prototype.generateHours = function(start, hours){
@@ -52,7 +51,18 @@ Locations.prototype.CookiesSum = function(){
 };
 
 Locations.prototype.render = function(){
-  
+  let tr2 = document.createElement('tr');
+  table.appendChild(tr2);
+  let td1 = document.createElement('td');
+  td1.textContent = this.name;
+  tr2.appendChild(td1);
+
+  let td2 = null;
+  for(let i=0; i < this.WorkingHours.length; i++){
+    td2= document.createElement('td');
+    td2.textContent = this.CookiesNum[i];
+    tr2.appendChild(td2);
+  }
 
 };
 
@@ -71,8 +81,8 @@ for(let i=0; i< Instances.length; i++){
   Instances[i].generateRandomNum();
   Instances[i].NumOfCookies();
   Instances[i].CookiesSum();
-  Instances[i].render();
-}
+};
+
 
 /**************************** stand-alone function ***********************/
 
@@ -91,8 +101,42 @@ function HeaderRow() {
     th.textContent = Instances[0].WorkingHours[i] + text;
     tr1.appendChild(th); 
   }
+  let th2 = document.createElement('th');
+  th2.textContent = 'Daily Location Total';
+  tr1.appendChild(th2)
 };
+
 HeaderRow()
+
+// loope render method to all locations:
+for(let i=0; i< Instances.length; i++){
+  Instances[i].render();
+}
+
+function FooterRow(){
+  let tr3 = document.createElement('tr');
+  table.appendChild(tr3);
+  let td3 = document.createElement('td');
+  td3.textContent = 'Totals';
+  tr3.appendChild(td3);
+
+  let td4 = null;
+  let sum = 0;
+  for(let i=0; i<Instances[0].WorkingHours.length; i++){
+
+    td4 = document.createElement('td');
+    for(let j=0; j<Instances.length; j++){
+      sum += Instances[j].CookiesNum[i]
+      td4.textContent = sum;
+      tr3.appendChild(td4);
+    }
+  }
+}
+FooterRow()
+
+
+
+
 
 
 // /**************************** 2nd object ***********************/

@@ -20,6 +20,11 @@ header h1{
 
 }
 
+table, th, td{
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
 section{
   color: whitesmoke;
   width: 56%;
