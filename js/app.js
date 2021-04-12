@@ -122,15 +122,22 @@ function FooterRow(){
 
   let td4 = null;
   let sum = 0;
+  let total = 0;
   for(let i=0; i<Instances[0].WorkingHours.length; i++){
-
+    sum = 0;
     td4 = document.createElement('td');
     for(let j=0; j<Instances.length; j++){
-      sum += Instances[j].CookiesNum[i]
+      sum += Instances[j].CookiesNum[i];
       td4.textContent = sum;
       tr3.appendChild(td4);
+      
     }
+    total += sum;
   }
+  let td5 = document.createElement('td');
+  td5.textContent = total;
+  tr3.appendChild(td5);
+
 }
 FooterRow()
 

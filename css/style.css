@@ -20,6 +20,17 @@ header h1{
 
 }
 
+#container{
+  font-size: 25px;
+  width: 80%;
+  margin: 30px auto 30px auto;
+  
+}
+
+table{
+  margin: auto;
+}
+
 table, th, td{
   border: 2px solid black;
   border-collapse: collapse;
