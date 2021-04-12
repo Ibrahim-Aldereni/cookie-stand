@@ -58,11 +58,17 @@ Locations.prototype.render = function(){
   tr2.appendChild(td1);
 
   let td2 = null;
+  let subtotal = 0;
   for(let i=0; i < this.WorkingHours.length; i++){
     td2= document.createElement('td');
     td2.textContent = this.CookiesNum[i];
     tr2.appendChild(td2);
+    subtotal +=this.CookiesNum[i];
   }
+
+  let td6= document.createElement('td');
+  td6.textContent = subtotal;
+  tr2.appendChild(td6);
 
 };
 
@@ -105,7 +111,6 @@ function HeaderRow() {
   th2.textContent = 'Daily Location Total';
   tr1.appendChild(th2)
 };
-
 HeaderRow()
 
 // loope render method to all locations:
@@ -130,14 +135,12 @@ function FooterRow(){
       sum += Instances[j].CookiesNum[i];
       td4.textContent = sum;
       tr3.appendChild(td4);
-      
     }
     total += sum;
   }
   let td5 = document.createElement('td');
   td5.textContent = total;
   tr3.appendChild(td5);
-
 }
 FooterRow()
 
