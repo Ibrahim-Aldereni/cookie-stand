@@ -11,4 +11,6 @@ This project helo to understand JS Objects and DOM manipulation.
 
 
 ## Links:
+[JS random number equation link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+
 [My linkedIn profile](https://www.linkedin.com/in/ibrahim-aldereni/)
