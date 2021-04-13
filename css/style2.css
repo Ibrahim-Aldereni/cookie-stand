@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: lightgrey;
+  font-family: 'Kalam', cursive;
+  padding: 0px;
+}
+
+
+/******************** header *******************/
+header{
+  background-color: grey;
+  position: relative;
+  height: 110px;
+  color: white;
+}
+
+header h1{
+  font-size: 50px;
+  font-weight: bold;
+  width: 20em;
+  position: absolute;
+  left: 120px;
+  top: 35px;
+}
+
+header img{
+  position: absolute;
+  left: 0px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+header nav{
+  position:absolute;
+  right: 20px;
+}
+
+header ul{
+  position: relative;
+  top: 15px;
+}
+
+header li{
+  display: inline-block;
+  padding: 30px;
+  padding-right: 30px;
+}
+
+header ul a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px ;
+}
+header ul a:hover{
+  color: black;
+}
+
+/******************** main*******************/
+
+#row-1{
+  width: 80%;
+  margin:30px auto 30px auto;
+  text-align: center;
+}
+
+#row-2{
+  width: 80%;
+  margin:30px auto 30px auto;
+  text-align: center;
+}
+
+#row-2 img{
+ padding: 0 12px 0 12px;
+}
+
+#row-3{
+  position: relative;
+  width: 60em;
+  height: 400px;
+  margin:30px auto 30px auto;
+  text-align: center;
+}
+
+#row-3 img{
+  position: absolute;
+  left: 0px;
+}
+
+#row-3 article{
+  width: 26em;
+  position: absolute;
+  right: 0px;
+  text-align: justify;
+  padding-bottom: 0;
+}
+
+#row-3 article h3{
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+#row-3 article p{
+  font-style: italic;
+  line-height: 20px;
+}
+
+#row-3 span{
+  position: absolute;
+  bottom: 0;
+  right: 16.6em;
+  color: white;
+  background-color: black;
+  padding: 9px;
+  width: 150px;
+  text-align: center;
+}
+
+footer{
+  height: 100px;
+  background-color: grey;
+  clear: both;
+}
+
+footer p{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-top: 45px;
+}
