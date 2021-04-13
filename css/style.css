@@ -1,24 +1,151 @@
-body{
-  background-color: bisque;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+*{
+  box-sizing: border-box;
 }
 
-header{
-  background-color: cadetblue;
-  height: 110px
+body{
+  background-color: #feffde;
+  font-family: 'Kalam', cursive;
+  padding: 0px;
 }
-#logo{
-  float: left;
+
+
+/******************** header *******************/
+header{
+  background-color: #ddffbc;
+  position: relative;
+  height: 110px;
+  color: black;
+  border-bottom: 7px solid #52734d;
 }
 
 header h1{
-  text-align: center;
-  margin: 0;
-
+  font-size: 50px;
+  font-weight: bold;
+  width: 20em;
+  position: absolute;
+  left: 120px;
+  top: 35px;
 }
+
+header img{
+  position: absolute;
+  left: 0px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+header nav{
+  position:absolute;
+  right: 20px;
+}
+
+header ul{
+  position: relative;
+  top: 15px;
+}
+
+header li{
+  display: inline-block;
+  padding: 30px;
+  padding-right: 30px;
+}
+
+header ul a{
+  text-decoration: none;
+  color: black;
+  font-size: 25px ;
+}
+header ul a:hover{
+  color: red;
+}
+
+/******************** main*******************/
+
+#row-1{
+  width: 80%;
+  margin:30px auto 30px auto;
+  text-align: center;
+}
+
+#row-2{
+  width: 80%;
+  margin:30px auto 30px auto;
+  text-align: center;
+}
+
+#row-2 img{
+ padding: 0 12px 0 12px;
+ vertical-align: middle;
+}
+
+#row-3{
+  position: relative;
+  width: 60em;
+  height: 300px;
+  margin:30px auto 30px auto;
+  text-align: center;
+}
+
+#row-3 img{
+  position: absolute;
+  left: 0px;
+}
+
+#row-3 article{
+  width: 40em;
+  position: absolute;
+  right: 0px;
+  text-align: justify;
+  padding-bottom: 0;
+  padding-left: 10px;
+}
+
+#row-3 article h3{
+  font-size: 20px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#row-3 article ul{
+  padding-left: 25px;
+  list-style: disc;
+}
+
+#row-3 #p1{
+  font-size: 23px;
+  color: #52734d;
+}
+
+#row-3 p{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#row-3 li{
+  padding-bottom: 3px;
+}
+footer{
+  height: 100px;
+  background-color: #52734d;
+  clear: both;
+}
+
+footer p{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-top: 45px;
+}
+
+
+/**************sales page **************/
 
 #container{
   font-size: 25px;
@@ -32,44 +159,18 @@ table{
 }
 
 table, th, td{
+  padding: 10px;
   border: 2px solid black;
   border-collapse: collapse;
 }
 
-section{
-  color: whitesmoke;
-  width: 56%;
-  background-color: brown;
-  margin: auto;
+table td{
+  width: 50px;
+  height: 50px;
 }
 
-section p{
-  padding: 15px;
-  font-size: 30px;
-  line-height: 50px;
-  text-align: center;
-}
-
-#btn1{
-  margin-left: 45%;
-  margin-bottom: 20px;
-  width: 120px;
-  height: 80px;
-  border: 5px solid red;
-  font-size: 18px;
-}
-
-#btn1:hover{
-  background-color: chartreuse;
-}
-
-
-footer{
-  height: 70px;
-  background-color: cadetblue;
-}
-
-footer p{
-  text-align: center;
-  padding-top: 1.6%;
+#sales-footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
