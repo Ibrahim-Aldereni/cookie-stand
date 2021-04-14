@@ -169,8 +169,22 @@ table td{
   height: 50px;
 }
 
-#sales-footer{
-  width: 100%;
-  position: absolute;
-  bottom: 0;
+
+/********************** form ***********************/
+
+#form{
+  text-align: center;
+  padding-top: 15px;
+}
+
+#form fieldset{
+  border: 8px double #52734d;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 15px;
+}
+#form legend{
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 15px;
 }
