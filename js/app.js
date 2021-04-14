@@ -72,7 +72,7 @@ Locations.prototype.render = function(){
 
 };
 
-/**************************** Instances ***********************/
+/**************************** Instances **********************************/
 
 let Seattle = new Locations('Seattle',23,65,6.3);
 let Tokyo = new Locations('Tokyo',3,24,1.2);
@@ -142,7 +142,48 @@ function FooterRow(){
   td5.textContent = total;
   tr3.appendChild(td5);
 }
-FooterRow()
+
+FooterRow();
+
+/************************* form events *****************************/
+
+let form = document.getElementById('form');
+
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+
+  let locationName = e.target.name.value;
+ 
+  let MinNum = e.target.min.value;
+  MinNum = parseInt(MinNum);
+
+  let MaxNum = e.target.max.value;
+  MaxNum = parseInt(MaxNum);
+
+  let AvgNum = e.target.avg.value;
+  AvgNum = Number(AvgNum); // parseInt dont work cuz it rounds the number. in HTML i used (step="0.1") with this input to accept float 
+
+  let newLocation = new Locations(locationName,MinNum,MaxNum,AvgNum); 
+  newLocation.generateHours(6,14);
+  newLocation.generateRandomNum();
+  newLocation.NumOfCookies();
+  newLocation.CookiesSum();
+  deleterow();  // delete total row
+  newLocation.render(); // add the new row  
+  FooterRow();    // add total row again
+});
+
+// delete row function 
+function deleterow() {
+  var table = document.querySelector('table');
+  var rowCount = table.rows.length;
+
+  table.deleteRow(rowCount -1);
+};
+
+
+
+
 
 
 
