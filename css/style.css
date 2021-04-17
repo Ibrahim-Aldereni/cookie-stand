@@ -75,6 +75,10 @@ main{
   min-height: 860px;
 }
 
+#sales-main{
+  min-height: 650px;
+}
+
 #row-1{
   position: relative;
   margin-top: 20px;
@@ -216,6 +220,7 @@ footer p{
 }
 
 
+
 /**************sales page **************/
 
 #container{
@@ -231,12 +236,12 @@ table{
 }
 
 tr:nth-child(even){
-  background-color: rgba(144, 238, 144, 0.3);
+  background-color: #e99d526b;
 }
 
 th{
   color: white;
-  background-color:#52734d ;
+  background-color:#a35709 ;
 }
 
 table, th, td{
@@ -260,11 +265,12 @@ table td{
 }
 
 #form fieldset{
-  border: 8px double #52734d;
+  border: 8px double #a35709;
   width: 50%;
   margin: auto;
   padding-bottom: 15px;
 }
+
 #form legend{
   font-size: 30px;
   font-weight: bold;
@@ -275,7 +281,6 @@ table td{
   font-size: 20px;
 }
 
-
 input{
   width: 25%;
   height: 30px;
@@ -283,7 +288,7 @@ input{
 
 #submit{
   border:none;
-  background-color: #52734d;
+  background-color: #a35709;
   width: 15%;
   height: 40px;
   color: white;
