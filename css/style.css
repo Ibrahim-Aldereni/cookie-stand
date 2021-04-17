@@ -206,8 +206,7 @@ article li span{
 }
 
 .pop:hover{
-  width: 21%;
-  height: 22%;
+  transform: scale(1.2)
 } 
 
   
