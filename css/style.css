@@ -81,7 +81,8 @@ main{
 
 #row-1{
   position: relative;
-  margin: 20px auto;
+  margin: 20px;
+  margin-left: 7%;
 }
 
 #row-1 img{
