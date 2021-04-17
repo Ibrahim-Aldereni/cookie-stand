@@ -1,4 +1,4 @@
-# Lab-06 & Lab-07 & Lab-8b & Lab-09
+# Lab-06 & Lab-07 & Lab-8b & Lab-09 & Lab-10b
 ## Project Name: cookie-stand
 This project helo to understand JS Objects and DOM manipulation.
 
@@ -6,6 +6,7 @@ This project helo to understand JS Objects and DOM manipulation.
 + In lab-07 I transform my code from literal objects to constructor function and I create a table instead of list.
 + In lab-08b I add CSS styling and photos to homepage.
 + In lab-09 I add a form to add new location to the table.
++ In lab-10b I change the whole style of the pages.
 
 ## Author: Ibrahim Aldereni 
 
