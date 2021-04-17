@@ -72,11 +72,12 @@ figure img{
 /******************** main*******************/
 
 main{
-  min-height: 500px;
+  min-height: 860px;
 }
 
 #row-1{
   position: relative;
+  margin-top: 20px;
 }
 
 #row-1 img{
@@ -100,10 +101,55 @@ main{
   color: rgb(240, 222, 190);
 }
 
+#row-2{
+  position: relative;
+  left: 40px;
+}
+
+#row-2 article{
+  position: absolute;
+  top: 25em;
+  background-color: rgba(173, 124, 90, 0.5);
+  width: 27em;
+  height: 25em;
+  border-radius: 20px;
+  border-left: 5px solid #a35709;
+}
+
+article p{
+  text-align: center;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#art-1 select{
+  margin-left: 7em;
+  margin-top: 15px;
+  padding: 5px 30px;
+  border: none;
+  font-size: 20px;
+  background-color: #a35709;
+  color: white;
+}
+
+#art-1 iframe{
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+#art-2{
+  left: 31em;
+}
+
+#art-3{
+  left: 62em;
+}
+
 /******************** footer ********************/
 
 footer{
-  background-color: rgba(173, 124, 90, 0.5);;
+  background-color: rgba(173, 124, 90, 0.5);
   width: 100%;
   height: 100px;  
   border-top: 9px solid #a35709;
