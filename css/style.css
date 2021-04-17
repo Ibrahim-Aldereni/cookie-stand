@@ -142,10 +142,62 @@ article p{
   left: 31em;
 }
 
+#art-2 ul{
+  font-size: 20px;
+  margin-left: 5em;
+  margin-top: 15px;
+}
+
+#art-2 li{
+  padding-top: 20px;
+}
+
+article li span{
+  font-weight: bolder;
+}
+
+#art-2 li em{
+  color: rgba(255, 0, 0, 0.774);
+}
+
 #art-3{
   left: 62em;
 }
 
+#art-3 ul{
+  font-size: 20px;
+  margin-left: 5em;
+  margin-top: 15px;
+}
+
+#art-3 li{
+  padding-top: 20px;
+}
+
+#art-3 img{
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 19px;
+}
+
+#twit{
+  left: 6em;
+} 
+
+#whats{
+  left: 12em;
+}
+
+#insta{
+  left: 18em;
+}
+
+.pop:hover{
+  width: 110px;
+  height: 100px;
+} 
+
+  
 /******************** footer ********************/
 
 footer{
