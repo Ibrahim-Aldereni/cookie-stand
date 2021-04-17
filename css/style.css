@@ -266,7 +266,7 @@ table td{
 
 #form fieldset{
   border: 8px double #a35709;
-  width: 50%;
+  width: 50em;
   margin: auto;
   padding-bottom: 15px;
 }
